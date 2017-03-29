@@ -44,8 +44,8 @@ public DigitalTimer() {
     CircleX = new int[2];
     val[0] = new Complex(x,55);
     unit = val[0].getUnit();
-    CircleY1 = (int)(55 + (unit * 2));
-    CircleY2 = (int)(55 + (unit * 5));
+    CircleY1 = (int)(55 + (unit * 1.5));
+    CircleY2 = (int)(55 + (unit * 4.5));
     x += 4*unit;
     x +=2;
     val[1] = new Complex(x, 55);

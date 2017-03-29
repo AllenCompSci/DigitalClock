@@ -18,7 +18,7 @@ public class MasterClock implements Runnable {
     private static SimpleDateFormat min = new SimpleDateFormat("mm");
     private static SimpleDateFormat sec = new SimpleDateFormat("ss");
     private static SimpleDateFormat period = new SimpleDateFormat("a");
-    private static SimpleDateFormat timezone = new SimpleDateFormat("zzz");
+    public static SimpleDateFormat timezone = new SimpleDateFormat("zzz");
     public MasterClock() {
         update();
 

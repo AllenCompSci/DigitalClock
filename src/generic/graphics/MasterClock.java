@@ -9,6 +9,7 @@ import java.util.Date;
  * Created by taylor hudson on 3/27/2017.
  */
 public class MasterClock implements Runnable {
+    public enum CLOCKSTATE{CLOCK, TIMER, STOPWATCH, ALARM};
     private static Date date = null;
     private static SimpleDateFormat dow = new SimpleDateFormat("EEEE");
     private static SimpleDateFormat month = new SimpleDateFormat("MMMM");

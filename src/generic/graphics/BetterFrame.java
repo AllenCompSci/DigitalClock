@@ -27,7 +27,26 @@ public class BetterFrame extends Frame implements MouseListener, MouseMotionList
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-
+        if(e.getKeyCode() == KeyEvent.VK_F1){
+            if(DigitalTimer.window == MasterClock.CLOCKSTATE.CLOCK){
+                DigitalTimer.switchState = true;
+                DigitalTimer.window = MasterClock.CLOCKSTATE.STOPWATCH;
+            }
+            else{
+                DigitalTimer.switchState = true;
+                DigitalTimer.window = MasterClock.CLOCKSTATE.CLOCK;
+            }
+        }
+        if(e.getKeyCode() == KeyEvent.VK_F2){
+            if(DigitalTimer.window == MasterClock.CLOCKSTATE.CLOCK){
+                DigitalTimer.switchState = true;
+                DigitalTimer.window = MasterClock.CLOCKSTATE.TIMER;
+            }
+            else{
+                DigitalTimer.switchState = true;
+                DigitalTimer.window = MasterClock.CLOCKSTATE.CLOCK;
+            }
+        }
 	}
 
 	@Override

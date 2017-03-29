@@ -7,12 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88118f89-11bb-45f4-a9cb-f9b702d5cf27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/BetterFrame.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/BetterFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/MasterClock.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/MasterClock.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver.java" afterPath="$PROJECT_DIR$/src/driver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/BetterFrame.java" afterPath="$PROJECT_DIR$/src/generic/graphics/BetterFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/MasterClock.java" afterPath="$PROJECT_DIR$/src/generic/graphics/MasterClock.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,24 +60,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DigitalTimer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DigitalTimer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1390">
-              <caret line="157" column="144" selection-start-line="157" selection-start-column="144" selection-end-line="157" selection-end-column="145" />
+            <state relative-caret-position="878">
+              <caret line="354" column="8" selection-start-line="354" selection-start-column="8" selection-end-line="354" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
-                <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
-                <element signature="docComment;method#dayShift#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="e#11103#11104#0" expanded="true" />
+                <element signature="e#11130#11131#0" expanded="true" />
+                <element signature="e#11179#11180#0" expanded="true" />
+                <element signature="e#11206#11207#0" expanded="true" />
+                <element signature="method#getYear#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#getDays#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#getMonth#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#getMonths#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#monthNum#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#drawNumbers#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
-                <marker date="1490811428172" expanded="false" signature="9957:10262" ph="{...}" />
-                <marker date="1490811428172" expanded="false" signature="10516:10621" ph="{...}" />
-                <marker date="1490811428172" expanded="false" signature="10665:11341" ph="{...}" />
+                <marker date="1490820658041" expanded="false" signature="14643:14948" ph="{...}" />
+                <marker date="1490820658041" expanded="false" signature="15202:15307" ph="{...}" />
+                <marker date="1490820658041" expanded="false" signature="15351:16027" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -157,7 +166,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graphics.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Graphics.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/Graphics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
@@ -238,10 +247,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1918" />
-    <option name="height" value="1038" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -847,7 +856,7 @@
       <workItem from="1490621934197" duration="28732000" />
       <workItem from="1490733582822" duration="615000" />
       <workItem from="1490758903678" duration="246000" />
-      <workItem from="1490788655644" duration="15334000" />
+      <workItem from="1490788655644" duration="19325000" />
     </task>
     <task id="LOCAL-00001" summary="forgot to fix the colon's at center, shifted up by .5 units">
       <created>1490759100020</created>
@@ -863,14 +872,21 @@
       <option name="project" value="LOCAL" />
       <updated>1490759187183</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1:21 Pre Alarm Phase Commit">
+      <created>1490811731059</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490811731059</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45104000" />
+    <option name="totallyTimeSpent" value="49095000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1918" height="1038" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -880,12 +896,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2421959" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1871714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -920,19 +936,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="forgot to fix the colon's at center, shifted up by .5 units" />
-    <option name="LAST_COMMIT_MESSAGE" value="forgot to fix the colon's at center, shifted up by .5 units" />
+    <MESSAGE value="1:21 Pre Alarm Phase Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1:21 Pre Alarm Phase Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java</url>
-          <line>253</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -971,16 +980,26 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="docComment;method#dayShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="e#11103#11104#0" expanded="true" />
+            <element signature="e#11130#11131#0" expanded="true" />
+            <element signature="e#11179#11180#0" expanded="true" />
+            <element signature="e#11206#11207#0" expanded="true" />
+            <element signature="method#getYear#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getDays#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMonth#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMonths#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#monthNum#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#drawNumbers#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
-            <marker date="1490811428172" expanded="false" signature="9957:10262" ph="{...}" />
-            <marker date="1490811428172" expanded="false" signature="10516:10621" ph="{...}" />
-            <marker date="1490811428172" expanded="false" signature="10665:11341" ph="{...}" />
+            <marker date="1490820658041" expanded="false" signature="14643:14948" ph="{...}" />
+            <marker date="1490820658041" expanded="false" signature="15202:15307" ph="{...}" />
+            <marker date="1490820658041" expanded="false" signature="15351:16027" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1102,16 +1121,26 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="docComment;method#dayShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="e#11103#11104#0" expanded="true" />
+            <element signature="e#11130#11131#0" expanded="true" />
+            <element signature="e#11179#11180#0" expanded="true" />
+            <element signature="e#11206#11207#0" expanded="true" />
+            <element signature="method#getYear#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getDays#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMonth#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMonths#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#monthNum#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#drawNumbers#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
-            <marker date="1490811428172" expanded="false" signature="9957:10262" ph="{...}" />
-            <marker date="1490811428172" expanded="false" signature="10516:10621" ph="{...}" />
-            <marker date="1490811428172" expanded="false" signature="10665:11341" ph="{...}" />
+            <marker date="1490820658041" expanded="false" signature="14643:14948" ph="{...}" />
+            <marker date="1490820658041" expanded="false" signature="15202:15307" ph="{...}" />
+            <marker date="1490820658041" expanded="false" signature="15351:16027" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1309,27 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1390">
-          <caret line="157" column="144" selection-start-line="157" selection-start-column="144" selection-end-line="157" selection-end-column="145" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="docComment;method#dayShift#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
-            <marker date="1490811428172" expanded="false" signature="9957:10262" ph="{...}" />
-            <marker date="1490811428172" expanded="false" signature="10516:10621" ph="{...}" />
-            <marker date="1490811428172" expanded="false" signature="10665:11341" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1346,6 +1354,37 @@
           <caret line="91" column="27" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="354" column="8" selection-start-line="354" selection-start-column="8" selection-end-line="354" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="e#11103#11104#0" expanded="true" />
+            <element signature="e#11130#11131#0" expanded="true" />
+            <element signature="e#11179#11180#0" expanded="true" />
+            <element signature="e#11206#11207#0" expanded="true" />
+            <element signature="method#getYear#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getDays#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMonth#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMonths#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#monthNum#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#drawNumbers#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
+            <marker date="1490820658041" expanded="false" signature="14643:14948" ph="{...}" />
+            <marker date="1490820658041" expanded="false" signature="15202:15307" ph="{...}" />
+            <marker date="1490820658041" expanded="false" signature="15351:16027" ph="{...}" />
           </folding>
         </state>
       </provider>

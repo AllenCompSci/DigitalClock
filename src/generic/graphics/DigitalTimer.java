@@ -151,19 +151,62 @@ public void updateTime(){
             String[] Today = {"Yes", "No"};
             String message = "Will you be setting an alarm for " + today + "?";
             String input = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Today, Today[0]);
+            boolean isToday = true;
             if(input.equals("No")){
+                isToday = false;
                 // 0 - Month // 1 Day
-                String [] Month = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+                String [] Year = getYear();
+                message = "Choose a Year : ";
+                ALARMTIME[5] = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Year, Year[0]);
+                String [] Month;
+                if(ALARMTIME[5].equals(MasterClock.getYear())){
+                    Month = getMonth();
+                }
+                else{
+                    Month = getMonths();
+                }
                 message = "Choose a Month : ";
                 ALARMTIME[0] = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Month, Month[0]);
+                String [] Days = getDays(ALARMTIME[0]);
+                message = "Choose a Day : ";
+                ALARMTIME[1] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Month, Days[0]);
+                if(ALARMTIME[1].equals(MasterClock.getDay()) && ALARMTIME[0].equals(MasterClock.getMonth()) && ALARMTIME[5].equals(MasterClock.getYear())){
+                    isToday = true;
+                }
             }
+            // Period
+            String [] Period;
+            ALARMTIME[4] = null;
+            if(isToday){
+                if("PM".equals(MasterClock.getAPM())){
+                    ALARMTIME[4] = "PM";
+                }
+            }
+            if(ALARMTIME[4] == (null)){
+                Period = new String[2];
+                Period[0] = "AM";
+                Period[1] = "PM";
+                message = "Choose a Period : ";
+                ALARMTIME[2] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Period, Period[0]);
+            }
+
+            // Hour
+            String [] Hour = getHours(isToday);
+            ALARMTIME[2] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Hour, Hour[0]);
+
+            // Min
+            String [] Min = getMins(isToday);
+            ALARMTIME[3] = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Min, Min[0]);
 
         }
 
     }
+
+
+
     private void init(){
-        // 0 - Month // 1 - Day // 2 - Hour // 3 - Min // 4 - Period
-        ALARMTIME = new String[5];
+        // 0 - Month // 1 - Day // 2 - Hour // 3 - Min // 4 - Period // 5 - Year
+        ALARMTIME = new String[6];
         clockupdate = new long[3];
         clockupdate[2] = 1000;
         for(int i = 1; i >= 0; i--){
@@ -308,6 +351,57 @@ public void updateTime(){
         }
         return "SAT";
     }
+    private String[] getHours(boolean isToday) {
+        return null;
+    }
+
+    private String[] getMins(boolean isToday) {
+        return null;
+    }
+    private String [] getYear(){
+        int YYYY = Integer.valueOf(MasterClock.getYear());
+        String[] y = new String[5];
+        for(int i = 0; i < 5; i++){
+            y[i] = String.valueOf(YYYY++);
+        }
+        return y;
+    }
+    private String[] getDays(String month){
+        int days = 28;
+        switch(month) {
+            case "January":
+            case "March":
+            case "May":
+            case "July":
+            case "August":
+            case "October":
+            case"December":
+                days = 31;
+                break;
+            case "April":
+            case "June":
+            case "September":
+            case "November":
+                days = 30;
+        }
+        int start = 1;
+        if(month.equals("February")){
+            int y = Integer.valueOf(ALARMTIME[5]);
+            if(y % 4 == 0 && (y % 100 != 0 || y % 400 == 0)){
+                days = 29;
+            }
+            else
+                days = 28;
+        }
+        if(month.equals(MasterClock.getMonth()) && ALARMTIME[5].equals(MasterClock.getYear())){
+            start = Integer.valueOf(MasterClock.getDay());
+        }
+        String [] ds = new String [days-start];
+        for(int i = 0; i < ds.length; i++){
+            ds[i] = String.valueOf(start+i);
+        }
+        return ds;
+    }
     private String monthShift(String month) {
         switch(month){
             case "January":
@@ -334,6 +428,46 @@ public void updateTime(){
                 return "NOV";
         }
         return "DEC";
+    }
+    private String []getMonth(){
+        String [] Month = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+        int CurrentMonth = monthNum(MasterClock.getMonth());
+        String [] fixed = new String[12 - CurrentMonth - 1];
+        for(int i = 0; i < fixed.length; i++){
+            fixed[i] = Month[CurrentMonth-1+i];
+        }
+        return fixed;
+    }
+    private String[] getMonths(){
+        String [] Month = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+        return Month;
+    }
+    private int monthNum(String month) {
+        switch(month){
+            case "January":
+                return 1;
+            case "February":
+                return 2;
+            case "March":
+                return 3;
+            case "April":
+                return 4;
+            case "May":
+                return 5;
+            case "June":
+                return 6;
+            case "July":
+                return 7;
+            case "August":
+                return 8;
+            case "September":
+                return 9;
+            case "October":
+                return 10;
+            case "November":
+                return 11;
+        }
+        return 12;
     }
     private void drawSeperator(Graphics2D g2d){
         g2d.setColor(clockColor);

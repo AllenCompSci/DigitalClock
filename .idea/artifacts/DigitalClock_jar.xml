@@ -3,25 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/DigitalClock_jar</output-path>
     <root id="archive" name="DigitalClock.jar">
       <element id="module-output" name="DigitalClock" />
-      <element id="directory" name="resource">
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Alert.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Beep.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Door-Chime.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/EAS.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Fire-Alarm.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Fire-Pager.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Horn.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/House-Fire-Alarm.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Loud-Buzzer.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Metronome.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Railroad.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Rooster-Crow.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Rooster.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Ship-Bell.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Temple-Bell.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Tornado-Siren.mp3" />
-        <element id="file-copy" path="$PROJECT_DIR$/resource/Wilhelm.mp3" />
-      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/resource" />
     </root>
   </artifact>
 </component>

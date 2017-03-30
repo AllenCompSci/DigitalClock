@@ -1,12 +1,11 @@
 package generic.graphics;
 
 import javazoom.jlme.util.Player;
+
 /* JavaZoom via
 http://www.javazoom.net/javalayer/sourcesme.html
  */
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
+import java.io.*;
 
 /**
  * Created by Taylor on 2/12/2017.
@@ -25,13 +24,26 @@ public class AudioPlayer implements Runnable{
     /**
     Uses String input to setup an audioplayer.
      */
+    private static InputStream getStream() throws IOException {
+        InputStream bis = new BufferedInputStream(MasterClock.class.getResource("./"+input).openStream());
+        return bis;
+    }
     private static void init(){
         try{
-            File file = new File(input);
-            FileInputStream fis = new FileInputStream(file);
-            BufferedInputStream bis = new BufferedInputStream(fis);
+           File file = new File(input);
 
-            player = new Player(bis);
+
+            if(file.exists()) {
+                FileInputStream fis = new FileInputStream(file);
+                BufferedInputStream bis = new BufferedInputStream(fis);
+                player = new Player(bis);
+            }
+            else{
+
+
+            }
+
+
         }
         catch (Exception e){
             e.printStackTrace();

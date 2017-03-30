@@ -38,6 +38,7 @@ public class DigitalTimer extends Graphics{
     static MasterClock.CLOCKSTATE window;
     static boolean ALARM = false;
     static boolean switchState = false;
+    static boolean alarm = false;
     private long stopwatchTime[];
     private long clockupdate[];
     private String today;
@@ -90,15 +91,17 @@ public void updateTime(){
         }
         switchState = false;
     }
-
+    if(alarm && !ALARM){
+        checkAlarm();
+    }
+    else{
+        alarm = false;
+        if(ALARM){
+            randColor();
+        }
+    }
     switch (window) {
         case ALARMS:
-            if(!ALARM){
-                checkAlarm();
-            }
-            else{
-                randColor();
-            }
         case CLOCK:
             ss = Integer.valueOf(MasterClock.getSec());
             mm = Integer.valueOf(MasterClock.getMin());
@@ -214,6 +217,7 @@ public void updateTime(){
             // Min
             String [] Min = getMins(isToday);
             ALARMTIME[3] = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Min, Min[0]);
+            if(ALARMTIME[3].length() < 2)
             ALARMTIME[3] = "0" + ALARMTIME[3];
         }
 
@@ -409,7 +413,6 @@ public void updateTime(){
         int start = 0;
         if(isToday && ALARMTIME[4].equals(MasterClock.getAPM()) && ALARMTIME[2].equals(MasterClock.getHour())){
             start = Integer.valueOf(MasterClock.getMin());
-
         }
         mins = new String[end-start];
 

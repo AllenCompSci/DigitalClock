@@ -7,10 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88118f89-11bb-45f4-a9cb-f9b702d5cf27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/BetterFrame.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/BetterFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/MasterClock.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/MasterClock.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer$1.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/MasterClock$CLOCKSTATE.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/MasterClock$CLOCKSTATE.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/BetterFrame.java" afterPath="$PROJECT_DIR$/src/generic/graphics/BetterFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +38,9 @@
       <file leaf-file-name="driver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,13 +48,11 @@
       <file leaf-file-name="MasterClock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/MasterClock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#update#0;class#MasterClock#0" expanded="false" />
-                <element signature="e#2273#2274#0" expanded="true" />
-                <element signature="e#2317#2318#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,31 +61,29 @@
       <file leaf-file-name="DigitalTimer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+            <state relative-caret-position="474">
+              <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
-                <element signature="e#11103#11104#0" expanded="true" />
-                <element signature="e#11130#11131#0" expanded="true" />
-                <element signature="e#11179#11180#0" expanded="true" />
-                <element signature="e#11206#11207#0" expanded="true" />
+                <element signature="method#getHours#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#getMins#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#getYear#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#getDays#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#getMonth#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#getMonths#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#monthNum#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#drawSeperator#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#drawNumbers#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
-                <marker date="1490820658041" expanded="false" signature="14643:14948" ph="{...}" />
-                <marker date="1490820658041" expanded="false" signature="15202:15307" ph="{...}" />
-                <marker date="1490820658041" expanded="false" signature="15351:16027" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -95,13 +92,11 @@
       <file leaf-file-name="Alphabet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/Alphabet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="332" column="30" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
+            <state relative-caret-position="474">
+              <caret line="332" column="30" lean-forward="false" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
               <folding>
                 <element signature="method#Alphabet#0;class#Alphabet#0" expanded="false" />
                 <element signature="method#init#0;class#Alphabet#0" expanded="false" />
-                <element signature="e#1007#1008#0" expanded="false" />
-                <element signature="e#1054#1055#0" expanded="false" />
                 <element signature="method#corners#0;class#Alphabet#0" expanded="false" />
                 <element signature="method#outside#0;class#Alphabet#0" expanded="false" />
                 <element signature="method#topCorners#0;class#Alphabet#0" expanded="false" />
@@ -144,12 +139,11 @@
       <file leaf-file-name="Complex.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/Complex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="72" column="65" selection-start-line="67" selection-start-column="5" selection-end-line="72" selection-end-column="65" />
+            <state relative-caret-position="315">
+              <caret line="99" column="44" lean-forward="false" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
               <folding>
+                <element signature="method#defineRegion#0;class#Complex#0" expanded="false" />
                 <element signature="method#draw#0;class#Complex#0" expanded="false" />
-                <element signature="e#4779#4780#0" expanded="true" />
-                <element signature="e#4824#4825#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,8 +153,26 @@
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/Timer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1101#1102#0" expanded="false" />
+                <element signature="e#1154#1155#0" expanded="false" />
+                <element signature="e#1182#1183#0" expanded="false" />
+                <element signature="e#1224#1225#0" expanded="false" />
+                <element signature="e#1247#1248#0" expanded="false" />
+                <element signature="e#1287#1288#0" expanded="false" />
+                <element signature="e#1327#1328#0" expanded="false" />
+                <element signature="e#1376#1377#0" expanded="false" />
+                <element signature="e#1410#1411#0" expanded="false" />
+                <element signature="e#1457#1458#0" expanded="false" />
+                <element signature="e#3011#3012#0" expanded="false" />
+                <element signature="e#3033#3034#0" expanded="false" />
+                <element signature="e#3058#3059#0" expanded="false" />
+                <element signature="e#3079#3080#0" expanded="false" />
+                <element signature="e#3453#3454#0" expanded="false" />
+                <element signature="e#3474#3475#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,7 +181,7 @@
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/Graphics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
-              <caret line="91" column="27" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="27" />
+              <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,8 +192,8 @@
       <file leaf-file-name="BetterFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+            <state relative-caret-position="120">
+              <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -246,20 +258,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="x" value="-3" />
+    <option name="y" value="31" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -276,16 +278,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DigitalClock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="DigitalClock" />
@@ -341,6 +337,8 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -404,7 +402,7 @@
       <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -414,7 +412,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -422,7 +420,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -447,7 +449,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <method />
     </configuration>
@@ -625,6 +631,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
@@ -641,27 +648,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -689,6 +675,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -765,34 +757,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -803,7 +767,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -840,6 +804,30 @@
         <item index="2" class="java.lang.String" itemvalue="Application.JavaApplication1" />
       </list>
     </recent_temporary>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -856,6 +844,7 @@
       <workItem from="1490733582822" duration="615000" />
       <workItem from="1490758903678" duration="246000" />
       <workItem from="1490788655644" duration="19415000" />
+      <workItem from="1490836208360" duration="6381000" />
     </task>
     <task id="LOCAL-00001" summary="forgot to fix the colon's at center, shifted up by .5 units">
       <created>1490759100020</created>
@@ -892,25 +881,35 @@
       <option name="project" value="LOCAL" />
       <updated>1490820731499</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finalized Alarm, currently makes the clock face flash.">
+      <created>1490843418336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1490843418336</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49185000" />
+    <option name="totallyTimeSpent" value="55566000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-3" y="31" width="1440" height="797" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23626374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -919,18 +918,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -951,11 +947,12 @@
     <MESSAGE value="forgot to fix the colon's at center, shifted up by .5 units" />
     <MESSAGE value="1:21 Pre Alarm Phase Commit" />
     <MESSAGE value="Fix getHours and getMins for the final alarm to work!&#10;&#10;Finished Stopwatch, Timer, and Clock, almost done implementing Alarm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix getHours and getMins for the final alarm to work!&#10;&#10;Finished Stopwatch, Timer, and Clock, almost done implementing Alarm" />
+    <MESSAGE value="Finalized Alarm, currently makes the clock face flash." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalized Alarm, currently makes the clock face flash." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -966,23 +963,169 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/MasterClock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#update#0;class#MasterClock#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getHours#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMins#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getYear#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getDays#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMonth#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMonths#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#monthNum#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#drawSeperator#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#drawNumbers#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/Alphabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="332" column="30" lean-forward="false" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
+          <folding>
+            <element signature="method#Alphabet#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#init#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#corners#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#outside#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#topCorners#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#bottomCorners#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#leftSide#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#rightSide#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#top#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#bottom#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#A#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#B#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#C#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#D#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#E#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#F#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#G#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#H#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#I#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#J#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#K#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#L#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#M#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#N#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#O#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#P#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#Q#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#R#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#S#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#T#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#U#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#V#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#W#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#X#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#Y#0;class#Alphabet#0" expanded="false" />
+            <element signature="method#Z#0;class#Alphabet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/Complex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="65" lean-forward="false" selection-start-line="67" selection-start-column="5" selection-end-line="72" selection-end-column="65" />
+          <folding>
+            <element signature="method#defineRegion#0;class#Complex#0" expanded="false" />
+            <element signature="method#draw#0;class#Complex#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1101#1102#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1182#1183#0" expanded="false" />
+            <element signature="e#1224#1225#0" expanded="false" />
+            <element signature="e#1247#1248#0" expanded="false" />
+            <element signature="e#1287#1288#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1376#1377#0" expanded="false" />
+            <element signature="e#1410#1411#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3033#3034#0" expanded="false" />
+            <element signature="e#3058#3059#0" expanded="false" />
+            <element signature="e#3079#3080#0" expanded="false" />
+            <element signature="e#3453#3454#0" expanded="false" />
+            <element signature="e#3474#3475#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/Graphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/MasterClock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#update#0;class#MasterClock#0" expanded="false" />
-            <element signature="e#2273#2274#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -990,30 +1133,28 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="e#11103#11104#0" expanded="true" />
-            <element signature="e#11130#11131#0" expanded="true" />
-            <element signature="e#11179#11180#0" expanded="true" />
-            <element signature="e#11206#11207#0" expanded="true" />
+            <element signature="method#getHours#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMins#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getYear#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getDays#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getMonth#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getMonths#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#monthNum#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#drawSeperator#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#drawNumbers#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
-            <marker date="1490820658041" expanded="false" signature="14643:14948" ph="{...}" />
-            <marker date="1490820658041" expanded="false" signature="15202:15307" ph="{...}" />
-            <marker date="1490820658041" expanded="false" signature="15351:16027" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1021,12 +1162,10 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
-          <caret line="332" column="30" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
+          <caret line="332" column="30" lean-forward="false" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
           <folding>
             <element signature="method#Alphabet#0;class#Alphabet#0" expanded="false" />
             <element signature="method#init#0;class#Alphabet#0" expanded="false" />
-            <element signature="e#1007#1008#0" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
             <element signature="method#corners#0;class#Alphabet#0" expanded="false" />
             <element signature="method#outside#0;class#Alphabet#0" expanded="false" />
             <element signature="method#topCorners#0;class#Alphabet#0" expanded="false" />
@@ -1068,11 +1207,10 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Complex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+          <caret line="120" column="36" lean-forward="false" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
           <folding>
+            <element signature="method#defineRegion#0;class#Complex#0" expanded="false" />
             <element signature="method#draw#0;class#Complex#0" expanded="false" />
-            <element signature="e#4779#4780#0" expanded="true" />
-            <element signature="e#4824#4825#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1080,15 +1218,33 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1101#1102#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1182#1183#0" expanded="false" />
+            <element signature="e#1224#1225#0" expanded="false" />
+            <element signature="e#1247#1248#0" expanded="false" />
+            <element signature="e#1287#1288#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1376#1377#0" expanded="false" />
+            <element signature="e#1410#1411#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3033#3034#0" expanded="false" />
+            <element signature="e#3058#3059#0" expanded="false" />
+            <element signature="e#3079#3080#0" expanded="false" />
+            <element signature="e#3453#3454#0" expanded="false" />
+            <element signature="e#3474#3475#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1098,7 +1254,7 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1108,22 +1264,18 @@
     <entry file="file://$PROJECT_DIR$/src/driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/MasterClock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#update#0;class#MasterClock#0" expanded="false" />
-            <element signature="e#2273#2274#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1131,30 +1283,28 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="e#11103#11104#0" expanded="true" />
-            <element signature="e#11130#11131#0" expanded="true" />
-            <element signature="e#11179#11180#0" expanded="true" />
-            <element signature="e#11206#11207#0" expanded="true" />
+            <element signature="method#getHours#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMins#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getYear#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getDays#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getMonth#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getMonths#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#monthNum#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#drawSeperator#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#drawNumbers#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
-            <marker date="1490820658041" expanded="false" signature="14643:14948" ph="{...}" />
-            <marker date="1490820658041" expanded="false" signature="15202:15307" ph="{...}" />
-            <marker date="1490820658041" expanded="false" signature="15351:16027" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1162,12 +1312,10 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
-          <caret line="332" column="30" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
+          <caret line="332" column="30" lean-forward="false" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
           <folding>
             <element signature="method#Alphabet#0;class#Alphabet#0" expanded="false" />
             <element signature="method#init#0;class#Alphabet#0" expanded="false" />
-            <element signature="e#1007#1008#0" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
             <element signature="method#corners#0;class#Alphabet#0" expanded="false" />
             <element signature="method#outside#0;class#Alphabet#0" expanded="false" />
             <element signature="method#topCorners#0;class#Alphabet#0" expanded="false" />
@@ -1209,11 +1357,10 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Complex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+          <caret line="120" column="36" lean-forward="false" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
           <folding>
+            <element signature="method#defineRegion#0;class#Complex#0" expanded="false" />
             <element signature="method#draw#0;class#Complex#0" expanded="false" />
-            <element signature="e#4779#4780#0" expanded="true" />
-            <element signature="e#4824#4825#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1221,15 +1368,33 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1101#1102#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1182#1183#0" expanded="false" />
+            <element signature="e#1224#1225#0" expanded="false" />
+            <element signature="e#1247#1248#0" expanded="false" />
+            <element signature="e#1287#1288#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1376#1377#0" expanded="false" />
+            <element signature="e#1410#1411#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3033#3034#0" expanded="false" />
+            <element signature="e#3058#3059#0" expanded="false" />
+            <element signature="e#3079#3080#0" expanded="false" />
+            <element signature="e#3453#3454#0" expanded="false" />
+            <element signature="e#3474#3475#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1239,7 +1404,7 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1252,15 +1417,59 @@
     <entry file="file://$PROJECT_DIR$/dryrun.dat" />
     <entry file="file://$PROJECT_DIR$/src/DryRun.java" />
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Background.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Calendar.java" />
+    <entry file="file://$PROJECT_DIR$/src/driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1101#1102#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1182#1183#0" expanded="false" />
+            <element signature="e#1224#1225#0" expanded="false" />
+            <element signature="e#1247#1248#0" expanded="false" />
+            <element signature="e#1287#1288#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1376#1377#0" expanded="false" />
+            <element signature="e#1410#1411#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3033#3034#0" expanded="false" />
+            <element signature="e#3058#3059#0" expanded="false" />
+            <element signature="e#3079#3080#0" expanded="false" />
+            <element signature="e#3453#3454#0" expanded="false" />
+            <element signature="e#3474#3475#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/MasterClock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#update#0;class#MasterClock#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="332" column="30" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
+        <state relative-caret-position="474">
+          <caret line="332" column="30" lean-forward="false" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
           <folding>
             <element signature="method#Alphabet#0;class#Alphabet#0" expanded="false" />
             <element signature="method#init#0;class#Alphabet#0" expanded="false" />
-            <element signature="e#1007#1008#0" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
             <element signature="method#corners#0;class#Alphabet#0" expanded="false" />
             <element signature="method#outside#0;class#Alphabet#0" expanded="false" />
             <element signature="method#topCorners#0;class#Alphabet#0" expanded="false" />
@@ -1299,65 +1508,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="1769" column="0" selection-start-line="1769" selection-start-column="0" selection-end-line="1769" selection-end-column="0" />
-          <folding>
-            <element signature="e#71104#71105#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Complex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="72" column="65" selection-start-line="67" selection-start-column="5" selection-end-line="72" selection-end-column="65" />
+        <state relative-caret-position="315">
+          <caret line="99" column="44" lean-forward="false" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
           <folding>
+            <element signature="method#defineRegion#0;class#Complex#0" expanded="false" />
             <element signature="method#draw#0;class#Complex#0" expanded="false" />
-            <element signature="e#4779#4780#0" expanded="true" />
-            <element signature="e#4824#4825#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/generic/graphics/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/generic/graphics/MasterClock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#update#0;class#MasterClock#0" expanded="false" />
-            <element signature="e#2273#2274#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1365,7 +1522,17 @@
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
-          <caret line="91" column="27" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="27" />
+          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1374,31 +1541,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+        <state relative-caret-position="474">
+          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#dayShift#0;class#DigitalTimer#0" expanded="false" />
-            <element signature="e#11103#11104#0" expanded="true" />
-            <element signature="e#11130#11131#0" expanded="true" />
-            <element signature="e#11179#11180#0" expanded="true" />
-            <element signature="e#11206#11207#0" expanded="true" />
+            <element signature="method#getHours#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#getMins#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getYear#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getDays#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#monthShift#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getMonth#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getMonths#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#monthNum#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#drawSeperator#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#drawNumbers#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
-            <marker date="1490820658041" expanded="false" signature="14643:14948" ph="{...}" />
-            <marker date="1490820658041" expanded="false" signature="15202:15307" ph="{...}" />
-            <marker date="1490820658041" expanded="false" signature="15351:16027" ph="{...}" />
           </folding>
         </state>
       </provider>

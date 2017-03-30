@@ -47,7 +47,7 @@ public class AudioPlayer implements Runnable{
         }
     }
     public static void setInput(String fileName){
-        input = fileName;
+        input = "resource/" + fileName;
         init();
     }
 

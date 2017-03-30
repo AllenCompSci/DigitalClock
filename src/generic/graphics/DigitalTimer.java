@@ -1,15 +1,7 @@
 package generic.graphics;
 
-import generic.graphics.Graphics;
-
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.WindowEvent;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import static generic.graphics.MasterClock.CLOCKSTATE.*;
@@ -26,16 +18,16 @@ public class DigitalTimer extends Graphics{
     private int CircleX[];
     private int CircleY1;
     private int CircleY2;
-    int XAlpha[], YAlpha[];
+    private int XAlpha[], YAlpha[];
     private double unit;
     private String ALARMTIME[];
     private Alphabet myalpha;
-    private static final int transColorVal = 30;
+    static final int transColorVal = 30;
     static Color clockColor;
     static Color transparent;
-    int testLetter;
-    final int POSX = 55;
-    final int POSY = 55;
+    private int testLetter;
+    private final int POSX = 55;
+    private final int POSY = 55;
     static MasterClock.CLOCKSTATE window;
     static boolean ALARM = false;
     static boolean switchState = false;
@@ -43,6 +35,7 @@ public class DigitalTimer extends Graphics{
     private long stopwatchTime[];
     private long clockupdate[];
     private String today;
+
     public DigitalTimer() {
         super("Digital Timer", 1100, 600);
         randColor();
@@ -55,50 +48,51 @@ public class DigitalTimer extends Graphics{
 
 }
 
-public void randColor(){
-    switch((int)(Math.random()*3)) {
-        case 0:
-        clockColor = Color.green;
-        transparent = new Color(clockColor.getRed(), clockColor.getGreen() - 30, clockColor.getBlue(), 50);
-        return;
-        case 1:
-            clockColor = new Color(55,251,218);
-            transparent = new Color(clockColor.getRed(), clockColor.getGreen(), clockColor.getBlue()- 30, 40);
+    public void randColor(){
+        switch((int)(Math.random()*3)) {
+            case 0:
+            clockColor = Color.green;
+            transparent = new Color(clockColor.getRed(), clockColor.getGreen() - 30, clockColor.getBlue(), 50);
             return;
+            case 1:
+                clockColor = new Color(55,251,218);
+                transparent = new Color(clockColor.getRed(), clockColor.getGreen(), clockColor.getBlue()- 30, 40);
+                return;
+
+        }
+        clockColor = Color.red;
+        transparent = new Color(clockColor.getRed()-30, clockColor.getGreen(), clockColor.getBlue(), 50);
 
     }
-    clockColor = Color.red;
-    transparent = new Color(clockColor.getRed()-30, clockColor.getGreen(), clockColor.getBlue(), 50);
 
-}
-public void updateTime(){
-    ss = Integer.valueOf(MasterClock.getSec());
-    mm = Integer.valueOf(MasterClock.getMin());
-    hh = Integer.valueOf(MasterClock.getHour());
-    dd = Integer.valueOf(MasterClock.getDay());
-    yyyy = Integer.valueOf(MasterClock.getYear());
-    today = MasterClock.getMonth() + " " + MasterClock.getDay() + ", " + MasterClock.getYear();
-    if(switchState){
-        stopwatchTime[0] = 0;
-        stopwatchTime[1] = 0;
-        stopwatchTime[2] = stopwatchTime[1] ;
-        if(window == TIMER){
-            stopwatchTime[1] += getTIMER();
+    public void updateTime(){
+        ss = Integer.valueOf(MasterClock.getSec());
+        mm = Integer.valueOf(MasterClock.getMin());
+        hh = Integer.valueOf(MasterClock.getHour());
+        dd = Integer.valueOf(MasterClock.getDay());
+        yyyy = Integer.valueOf(MasterClock.getYear());
+        today = MasterClock.getMonth() + " " + MasterClock.getDay() + ", " + MasterClock.getYear();
+        if(switchState){
+            stopwatchTime[0] = 0;
+            stopwatchTime[1] = 0;
+            stopwatchTime[2] = stopwatchTime[1] ;
+            if(window == TIMER){
+                stopwatchTime[1] += getTIMER();
+            }
+            stopwatchTime[1] += System.currentTimeMillis();
+            if(window == ALARMS){
+                setAlarm();
+                ALARM = false;
+            }
+            switchState = false;
         }
-        stopwatchTime[1] += System.currentTimeMillis();
-        if(window == ALARMS){
-            setAlarm();
-            ALARM = false;
+        if(alarm && !ALARM){
+            checkAlarm();
         }
-        switchState = false;
-    }
-    if(alarm && !ALARM){
-        checkAlarm();
-    }
-    else{
-        alarm = false;
-        if(ALARM){
-            randColor();
+        else{
+            alarm = false;
+            if(ALARM){
+                randColor();
 
 
             // This is if you want a loop
@@ -108,50 +102,50 @@ public void updateTime(){
                 AudioPlayer.play = true;
             // example.playOnce();
 
-        }
-    }
-    switch (window) {
-        case ALARMS:
-            window = CLOCK;
-        case CLOCK:
-            ss = Integer.valueOf(MasterClock.getSec());
-            mm = Integer.valueOf(MasterClock.getMin());
-            hh = Integer.valueOf(MasterClock.getHour());
-            break;
-        case TIMER:
-            if(stopwatchTime[1] < stopwatchTime[2]){
-                window = CLOCK;
-                break;
             }
-        case STOPWATCH:
-            stopwatchTime[2] = System.currentTimeMillis();
-            stopwatchTime[0] = Math.abs(stopwatchTime[2]-stopwatchTime[1]);
-            ss = (int)(stopwatchTime[0]/1000);
-            mm = (ss/60)%60;
-            hh = (ss/3600);
-            ss %= 60;
-            break;
+        }
+        switch (window) {
+            case ALARMS:
+                window = CLOCK;
+            case CLOCK:
+                ss = Integer.valueOf(MasterClock.getSec());
+                mm = Integer.valueOf(MasterClock.getMin());
+                hh = Integer.valueOf(MasterClock.getHour());
+                break;
+            case TIMER:
+                if(stopwatchTime[1] < stopwatchTime[2]){
+                    window = CLOCK;
+                    break;
+                }
+            case STOPWATCH:
+                stopwatchTime[2] = System.currentTimeMillis();
+                stopwatchTime[0] = Math.abs(stopwatchTime[2]-stopwatchTime[1]);
+                ss = (int)(stopwatchTime[0]/1000);
+                mm = (ss/60)%60;
+                hh = (ss/3600);
+                ss %= 60;
+                break;
 
 
+        }
+        display[0] = hh / 10;
+        display[1] = hh % 10;
+        display[2] = mm / 10;
+        display[3] = mm % 10;
+        display[4] = ss / 10;
+        display[5] = ss % 10;
+
+        display[6] = dd / 10;
+        display[7] = dd % 10;
+        display[8] = yyyy / 1000;
+        display[9] = (yyyy/100)%10;
+        display[10] = (yyyy / 10) % 10;
+        display[11] = yyyy %10;
+        info[0] = monthShift(MasterClock.getMonth());
+        info[1] = dayShift(MasterClock.getDayoftheWeek());
+        info[2] = MasterClock.getAPM();
+        info[3] = MasterClock.getTIMEZONE();
     }
-    display[0] = hh / 10;
-    display[1] = hh % 10;
-    display[2] = mm / 10;
-    display[3] = mm % 10;
-    display[4] = ss / 10;
-    display[5] = ss % 10;
-
-    display[6] = dd / 10;
-    display[7] = dd % 10;
-    display[8] = yyyy / 1000;
-    display[9] = (yyyy/100)%10;
-    display[10] = (yyyy / 10) % 10;
-    display[11] = yyyy %10;
-    info[0] = monthShift(MasterClock.getMonth());
-    info[1] = dayShift(MasterClock.getDayoftheWeek());
-    info[2] = MasterClock.getAPM();
-    info[3] = MasterClock.getTIMEZONE();
-}
 
     private long getTIMER() {
         String [] resp = new String[3];
@@ -172,9 +166,14 @@ public void updateTime(){
 
     private void setAlarm(){
         if(switchState) {
+            String[] AlarmSounds = {"Alert", "Beep", "Door Chime", "EAS", "Fire Alarm", "Fire Pager", "Horn", "House Fire Alarm", "Loud Buzzer", "Metronome", "Railroad",
+            "Rooster Crow", "Rooster", "Ship Bell", "Temple Bell", "Tornado Siren", "Wilhelm"};
+            String message = "Which Alarm Sound Would you like to play?";
+            String input = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, AlarmSounds, AlarmSounds[3]);
+            AudioPlayer.setInput(input + ".mp3");
             String[] Today = {"Yes", "No"};
-            String message = "Will you be setting an alarm for " + today + "?";
-            String input = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Today, Today[0]);
+            message = "Will you be setting an alarm for " + today + "?";
+            input = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Today, Today[0]);
             boolean isToday = true;
             if(input.equals("No")){
                 isToday = false;
@@ -242,8 +241,7 @@ public void updateTime(){
         }
     }
 
-    private boolean MINUTETIMER()
-    {
+    private boolean MINUTETIMER(){
         return ALARMTIME[3].equals(MasterClock.getMin()) &&  ALARMTIME[2].equals(MasterClock.getHour()) &&
                 ALARMTIME[0].equals(MasterClock.getMonth()) && ALARMTIME[1].equals(MasterClock.getDay()) &&
                 ALARMTIME[4].equals(MasterClock.getAPM());

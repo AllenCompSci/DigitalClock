@@ -7,11 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88118f89-11bb-45f4-a9cb-f9b702d5cf27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer$1.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Alert.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Beep.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Door Chime.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/EAS.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Fire Alarm.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Fire Pager.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Horn.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/House Fire Alarm.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Loud Buzzer.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Metronome.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Railroad.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Rooster Crow.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Rooster.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Ship Bell.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Temple Bell.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Tornado Siren.mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/0477.mp3" afterPath="$PROJECT_DIR$/resource/Wilhelm.mp3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DigitalClock.iml" afterPath="$PROJECT_DIR$/DigitalClock.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver.java" afterPath="$PROJECT_DIR$/src/driver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" />
     </list>
     <ignored path="untitled1.iws" />
@@ -37,8 +56,8 @@
       <file leaf-file-name="driver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="153">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -57,17 +76,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DigitalTimer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DigitalTimer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+            <state relative-caret-position="102">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#DigitalTimer#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
+                <element signature="method#MINUTETIMER#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
                 <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
@@ -90,16 +112,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioPlayer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AudioPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+            <state relative-caret-position="226">
+              <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#AudioPlayer#0;class#AudioPlayer#0" expanded="false" />
                 <element signature="method#init#0;class#AudioPlayer#0" expanded="false" />
                 <element signature="method#playOnce#0;class#AudioPlayer#0" expanded="false" />
+                <element signature="method#setInput#0;class#AudioPlayer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -190,8 +213,8 @@
       <file leaf-file-name="BetterFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -245,8 +268,8 @@
         <option value="$PROJECT_DIR$/src/generic/graphics/MasterClock.java" />
         <option value="$PROJECT_DIR$/src/generic/graphics/BetterFrame.java" />
         <option value="$PROJECT_DIR$/src/driver.java" />
-        <option value="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" />
         <option value="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" />
+        <option value="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" />
       </list>
     </option>
   </component>
@@ -318,7 +341,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,25 +355,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graphics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DigitalClock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DigitalClock" />
+              <option name="myItemId" value="artifacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
+              <option name="myItemId" value="DigitalClock_jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,8 +375,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/library/jlme0.1.3.jar!/" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
@@ -371,10 +384,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\taylor hudson\GitHub\DigitalClock\resource" />
       <recent name="C:\Users\taylor hudson\GitHub\untitled1\src" />
       <recent name="C:\Users\taylor hudson\GitHub\untitled1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\taylor hudson\GitHub\DigitalClock\resource" />
       <recent name="C:\Users\taylor hudson\GitHub\DigitalClock" />
       <recent name="C:\Users\taylor hudson\GitHub\DigitalClock\src\generic\graphics" />
       <recent name="C:\Users\taylor hudson\GitHub\DigitalClock\library" />
@@ -915,7 +930,7 @@
       <workItem from="1490758903678" duration="246000" />
       <workItem from="1490788655644" duration="19415000" />
       <workItem from="1490836208360" duration="6381000" />
-      <workItem from="1490873193835" duration="1900000" />
+      <workItem from="1490873193835" duration="3402000" />
     </task>
     <task id="LOCAL-00001" summary="forgot to fix the colon's at center, shifted up by .5 units">
       <created>1490759100020</created>
@@ -963,15 +978,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57466000" />
+    <option name="totallyTimeSpent" value="58968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -981,8 +996,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18539326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18539326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994187" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -996,7 +1012,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1023,7 +1038,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1059,8 +1074,11 @@
             <element signature="imports" expanded="true" />
             <element signature="method#DigitalTimer#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#MINUTETIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
@@ -1193,8 +1211,11 @@
             <element signature="imports" expanded="true" />
             <element signature="method#DigitalTimer#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#MINUTETIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
@@ -1327,8 +1348,11 @@
             <element signature="imports" expanded="true" />
             <element signature="method#DigitalTimer#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#MINUTETIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
@@ -1461,8 +1485,11 @@
             <element signature="imports" expanded="true" />
             <element signature="method#DigitalTimer#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#MINUTETIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
@@ -1604,16 +1631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -1667,6 +1684,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AudioPlayer#0;class#AudioPlayer#0" expanded="false" />
+            <element signature="method#init#0;class#AudioPlayer#0" expanded="false" />
+            <element signature="method#playOnce#0;class#AudioPlayer#0" expanded="false" />
+            <element signature="method#setInput#0;class#AudioPlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/MasterClock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1678,24 +1717,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver.java">
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/BetterFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        <state relative-caret-position="102">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#DigitalTimer#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#randColor#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#updateTime#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#getTIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#setAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#checkAlarm#0;class#DigitalTimer#0" expanded="false" />
+            <element signature="method#MINUTETIMER#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#init#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#run#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#draw#0;class#DigitalTimer#0" expanded="false" />
@@ -1713,19 +1757,6 @@
             <element signature="method#drawBackground#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#drawAlpha#0;class#DigitalTimer#0" expanded="false" />
             <element signature="method#testALPHA#0;class#DigitalTimer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AudioPlayer#0;class#AudioPlayer#0" expanded="false" />
-            <element signature="method#init#0;class#AudioPlayer#0" expanded="false" />
-            <element signature="method#playOnce#0;class#AudioPlayer#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -24,24 +24,20 @@ public class AudioPlayer implements Runnable{
     /**
     Uses String input to setup an audioplayer.
      */
-    private static InputStream getStream() throws IOException {
-        InputStream bis = new BufferedInputStream(MasterClock.class.getResource("./"+input).openStream());
-        return bis;
-    }
+
     private static void init(){
         try{
            File file = new File(input);
-
-
-            if(file.exists()) {
-                FileInputStream fis = new FileInputStream(file);
-                BufferedInputStream bis = new BufferedInputStream(fis);
-                player = new Player(bis);
-            }
-            else{
-
-
-            }
+           if(file.exists()) {
+               FileInputStream fis = new FileInputStream(file);
+               BufferedInputStream bis = new BufferedInputStream(fis);
+               player = new Player(bis);
+           }
+           else{
+               FileInputStream fis = new FileInputStream(new File("./" + input));
+               BufferedInputStream bis = new BufferedInputStream(fis);
+               player = new Player(bis);
+           }
 
 
         }

@@ -47,10 +47,20 @@ public class AudioPlayer implements Runnable{
         }
     }
     public static void setInput(String fileName){
-        input = "resource/" + fileName;
+        input = "resource/" + spaceRemove(fileName);
+        //System.out.println(input);
+
         init();
     }
-
+    private static String spaceRemove(String fileName){
+        //System.out.println(fileName);
+        while(fileName.indexOf(' ')>=0){
+            fileName = fileName.replace(' ', '-');
+            //System.out.println(fileName);
+        }
+        //System.out.println("done");
+        return fileName;
+    }
     @Override
     public void run() {
         while(isRunning){

@@ -11,9 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import static generic.graphics.MasterClock.CLOCKSTATE.CLOCK;
-import static generic.graphics.MasterClock.CLOCKSTATE.STOPWATCH;
-import static generic.graphics.MasterClock.CLOCKSTATE.TIMER;
+import static generic.graphics.MasterClock.CLOCKSTATE.*;
 
 /**
  * Created by taylor hudson on 3/27/2017.
@@ -86,10 +84,21 @@ public void updateTime(){
             stopwatchTime[1] += getTIMER();
         }
         stopwatchTime[1] += System.currentTimeMillis();
+        if(window == ALARMS){
+            setAlarm();
+            ALARM = false;
+        }
         switchState = false;
     }
 
     switch (window) {
+        case ALARMS:
+            if(!ALARM){
+                checkAlarm();
+            }
+            else{
+                randColor();
+            }
         case CLOCK:
             ss = Integer.valueOf(MasterClock.getSec());
             mm = Integer.valueOf(MasterClock.getMin());
@@ -146,6 +155,7 @@ public void updateTime(){
         }
         return time;
     }
+
     private void setAlarm(){
         if(switchState) {
             String[] Today = {"Yes", "No"};
@@ -174,6 +184,11 @@ public void updateTime(){
                     isToday = true;
                 }
             }
+            else{
+                ALARMTIME[5] = MasterClock.getYear();
+                ALARMTIME[0] = MasterClock.getMonth();
+                ALARMTIME[1] = MasterClock.getDay();
+            }
             // Period
             String [] Period;
             ALARMTIME[4] = null;
@@ -187,19 +202,29 @@ public void updateTime(){
                 Period[0] = "AM";
                 Period[1] = "PM";
                 message = "Choose a Period : ";
-                ALARMTIME[2] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Period, Period[0]);
+                ALARMTIME[4] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Period, Period[0]);
             }
 
             // Hour
             String [] Hour = getHours(isToday);
             ALARMTIME[2] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Hour, Hour[0]);
-
+            if(ALARMTIME[2].length() < 2){
+                ALARMTIME[2] = "0" + ALARMTIME[2];
+            }
             // Min
             String [] Min = getMins(isToday);
             ALARMTIME[3] = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Min, Min[0]);
-
+            ALARMTIME[3] = "0" + ALARMTIME[3];
         }
 
+    }
+    private void checkAlarm() {
+        if(ALARMTIME[3].equals(MasterClock.getMin()) &&  ALARMTIME[2].equals(MasterClock.getHour()) &&
+                ALARMTIME[0].equals(MasterClock.getMonth()) && ALARMTIME[1].equals(MasterClock.getDay()) &&
+                ALARMTIME[4].equals(MasterClock.getAPM())){
+            ALARM = true;
+            System.out.println("ALARM GOES OFF");
+        }
     }
 
 
@@ -312,6 +337,7 @@ public void updateTime(){
        startDraw();
        drawBackground(art);
        switch(window){
+           case ALARMS:
            case CLOCK:
                drawSeperator(art);
                drawNumbers(art);
@@ -352,11 +378,46 @@ public void updateTime(){
         return "SAT";
     }
     private String[] getHours(boolean isToday) {
-        return null;
+        String [] hrs;
+        int end = 12;
+        int start = 12;
+        if(isToday && ALARMTIME[4].equals(MasterClock.getAPM())){
+            start = Integer.valueOf(MasterClock.getHour());
+
+        }
+        if(start == 12){
+            start = 0;
+        }
+        hrs = new String[end-start];
+
+        for( int i = 0; start+i < end; i ++){
+            if(i+start == 0) {
+                hrs[0] = "12";
+            }
+            else{
+                hrs[i] = String.valueOf(start+i);
+            }
+        }
+        return hrs;
     }
+// 0 - Month // 1 - Day // 2 - Hour // 3 - Min // 4 - Period // 5 - Year
 
     private String[] getMins(boolean isToday) {
-        return null;
+
+        String [] mins;
+        int end = 60;
+        int start = 0;
+        if(isToday && ALARMTIME[4].equals(MasterClock.getAPM()) && ALARMTIME[2].equals(MasterClock.getHour())){
+            start = Integer.valueOf(MasterClock.getMin());
+
+        }
+        mins = new String[end-start];
+
+        for( int i = 0; start+i < end; i ++){
+                mins[i] = String.valueOf(start+i);
+        }
+        return mins;
+
     }
     private String [] getYear(){
         int YYYY = Integer.valueOf(MasterClock.getYear());
@@ -478,7 +539,7 @@ public void updateTime(){
     }
     private void drawNumbers(Graphics2D g2d){
         int size = 12;
-        if(window != CLOCK)
+        if(window != CLOCK && window != ALARMS)
             size = 6;
         for(int i = 0; i < size; i++)
             val[i].draw(g2d, display[i]);

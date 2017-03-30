@@ -47,6 +47,15 @@ public class BetterFrame extends Frame implements MouseListener, MouseMotionList
                 DigitalTimer.window = MasterClock.CLOCKSTATE.CLOCK;
             }
         }
+        if(e.getKeyCode() == KeyEvent.VK_F3){
+        	if(DigitalTimer.window == MasterClock.CLOCKSTATE.CLOCK){
+        		DigitalTimer.switchState = true;
+        		DigitalTimer.window = MasterClock.CLOCKSTATE.ALARMS;
+			}
+			else{
+				DigitalTimer.window = MasterClock.CLOCKSTATE.CLOCK;
+			}
+		}
 	}
 
 	@Override

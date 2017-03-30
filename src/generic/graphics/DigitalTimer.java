@@ -2,6 +2,7 @@ package generic.graphics;
 
 import generic.graphics.Graphics;
 
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.InputEvent;
@@ -98,10 +99,20 @@ public void updateTime(){
         alarm = false;
         if(ALARM){
             randColor();
+
+
+            // This is if you want a loop
+            //new Thread(example).start();
+            // This is if you want the single go
+            if(MINUTETIMER())
+                AudioPlayer.play = true;
+            // example.playOnce();
+
         }
     }
     switch (window) {
         case ALARMS:
+            window = CLOCK;
         case CLOCK:
             ss = Integer.valueOf(MasterClock.getSec());
             mm = Integer.valueOf(MasterClock.getMin());
@@ -231,7 +242,12 @@ public void updateTime(){
         }
     }
 
-
+    private boolean MINUTETIMER()
+    {
+        return ALARMTIME[3].equals(MasterClock.getMin()) &&  ALARMTIME[2].equals(MasterClock.getHour()) &&
+                ALARMTIME[0].equals(MasterClock.getMonth()) && ALARMTIME[1].equals(MasterClock.getDay()) &&
+                ALARMTIME[4].equals(MasterClock.getAPM());
+    }
 
     private void init(){
         // 0 - Month // 1 - Day // 2 - Hour // 3 - Min // 4 - Period // 5 - Year

@@ -7,28 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88118f89-11bb-45f4-a9cb-f9b702d5cf27" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Alert.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Beep.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Door-Chime.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/EAS.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Fire-Alarm.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Fire-Pager.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Horn.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/House-Fire-Alarm.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Loud-Buzzer.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Metronome.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Railroad.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Rooster-Crow.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Rooster.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Ship-Bell.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Temple-Bell.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Tornado-Siren.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/Wilhelm.mp3" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" afterPath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/generic/graphics/dt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DigitalClock.iml" afterPath="$PROJECT_DIR$/DigitalClock.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver.java" afterPath="$PROJECT_DIR$/src/driver.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,12 +34,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="driver.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="driver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/generic/graphics/dt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioPlayer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AudioPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="339">
@@ -266,10 +264,11 @@
         <option value="$PROJECT_DIR$/src/generic/graphics/Alphabet.java" />
         <option value="$PROJECT_DIR$/src/generic/graphics/MasterClock.java" />
         <option value="$PROJECT_DIR$/src/generic/graphics/BetterFrame.java" />
-        <option value="$PROJECT_DIR$/src/driver.java" />
         <option value="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" />
         <option value="$PROJECT_DIR$/src/resource/audio.java" />
         <option value="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" />
+        <option value="$PROJECT_DIR$/src/generic/graphics/dt.java" />
+        <option value="$PROJECT_DIR$/src/driver.java" />
       </list>
     </option>
   </component>
@@ -280,8 +279,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
-    <option name="y" value="35" />
+    <option name="x" value="433" />
+    <option name="y" value="103" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
   </component>
@@ -342,6 +341,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DigitalClock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DigitalClock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -960,7 +977,7 @@
       <workItem from="1490758903678" duration="246000" />
       <workItem from="1490788655644" duration="19415000" />
       <workItem from="1490836208360" duration="6381000" />
-      <workItem from="1490873193835" duration="12077000" />
+      <workItem from="1490873193835" duration="14157000" />
     </task>
     <task id="LOCAL-00001" summary="forgot to fix the colon's at center, shifted up by .5 units">
       <created>1490759100020</created>
@@ -1008,11 +1025,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67643000" />
+    <option name="totallyTimeSpent" value="69723000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="35" width="1440" height="797" extended-state="1" />
-    <editor active="false" />
+    <frame x="433" y="103" width="1440" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1021,7 +1038,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23546511" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23546511" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1077,14 +1094,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/MasterClock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1246,7 +1255,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1411,7 +1422,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1576,7 +1589,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1909,14 +1924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resource/audio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1949,6 +1956,29 @@
             <element signature="method#playOnce#0;class#AudioPlayer#0" expanded="false" />
             <element signature="method#spaceRemove#0;class#AudioPlayer#0" expanded="false" />
             <element signature="method#run#0;class#AudioPlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generic/graphics/dt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

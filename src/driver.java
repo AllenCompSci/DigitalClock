@@ -1,4 +1,5 @@
 import generic.graphics.AudioPlayer;
+import generic.graphics.CascdingWindow;
 import generic.graphics.DigitalTimer;
 import generic.graphics.MasterClock;
 
@@ -8,12 +9,14 @@ import generic.graphics.MasterClock;
  */
 public class driver {
 
-
+    static Class driverClass = driver.class;
     public static void main(String [] args0){
+        CascdingWindow handler = new CascdingWindow();
+        AudioPlayer example = new AudioPlayer("/Wilhelm.mp3");
         DigitalTimer time = new DigitalTimer();
-        AudioPlayer example = new AudioPlayer("Wilhelm.mp3");
         new Thread(example).start();
         new Thread(new MasterClock()).start();
+        new Thread(handler).start();
         new Thread(time).start();
     }
 

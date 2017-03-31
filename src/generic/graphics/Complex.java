@@ -96,7 +96,6 @@ public class Complex {
 
 
     }
-
     public void draw(Graphics2D g2, int val){
 
 
@@ -109,6 +108,8 @@ public class Complex {
                 g2.setColor(DigitalTimer.transparent);
                 g2.fillPolygon(set[i]);
             }
+            g2.setColor(DigitalTimer.bkcolor);
+            g2.drawPolygon(set[i]);
         }
     }
     public float getUnit(){

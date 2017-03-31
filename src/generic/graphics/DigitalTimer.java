@@ -20,11 +20,12 @@ public class DigitalTimer extends Graphics{
     private int CircleY2;
     private int XAlpha[], YAlpha[];
     private double unit;
-    private String ALARMTIME[];
+    public static String[] ALARMTIME;
     private Alphabet myalpha;
     static final int transColorVal = 30;
     static Color clockColor;
     static Color transparent;
+    static Color bkcolor;
     private int testLetter;
     private final int POSX = 55;
     private final int POSY = 55;
@@ -34,6 +35,8 @@ public class DigitalTimer extends Graphics{
     static boolean alarm = false;
     private long stopwatchTime[];
     private long clockupdate[];
+    public static boolean errorMessage = false;
+    public static String theErrorMessage = "";
     private String today;
 
     public DigitalTimer() {
@@ -41,6 +44,7 @@ public class DigitalTimer extends Graphics{
         randColor();
         window = CLOCK;
         stopwatchTime = new long[4];
+        bkcolor = Color.black;
         stopwatchTime[0] = 0;
         testLetter = 0; // TEST VALUE UNUSED
         frame.setVisible(true);
@@ -166,73 +170,12 @@ public class DigitalTimer extends Graphics{
 
     private void setAlarm(){
         if(switchState) {
-            String[] AlarmSounds = {"Alert", "Beep", "Door Chime", "EAS", "Fire Alarm", "Fire Pager", "Horn", "House Fire Alarm", "Loud Buzzer", "Metronome", "Railroad",
-            "Rooster Crow", "Rooster", "Ship Bell", "Temple Bell", "Tornado Siren", "Wilhelm"};
-            String message = "Which Alarm Sound Would you like to play?";
-            String input = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, AlarmSounds, AlarmSounds[3]);
-            AudioPlayer.setInput(input + ".mp3");
-            String[] Today = {"Yes", "No"};
-            message = "Will you be setting an alarm for " + today + "?";
-            input = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Today, Today[0]);
-            boolean isToday = true;
-            if(input.equals("No")){
-                isToday = false;
-                // 0 - Month // 1 Day
-                String [] Year = getYear();
-                message = "Choose a Year : ";
-                ALARMTIME[5] = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Year, Year[0]);
-                String [] Month;
-                if(ALARMTIME[5].equals(MasterClock.getYear())){
-                    Month = getMonth();
-                }
-                else{
-                    Month = getMonths();
-                }
-                message = "Choose a Month : ";
-                ALARMTIME[0] = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Month, Month[0]);
-                String [] Days = getDays(ALARMTIME[0]);
-                message = "Choose a Day : ";
-                ALARMTIME[1] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Month, Days[0]);
-                if(ALARMTIME[1].equals(MasterClock.getDay()) && ALARMTIME[0].equals(MasterClock.getMonth()) && ALARMTIME[5].equals(MasterClock.getYear())){
-                    isToday = true;
-                }
-            }
-            else{
-                ALARMTIME[5] = MasterClock.getYear();
-                ALARMTIME[0] = MasterClock.getMonth();
-                ALARMTIME[1] = MasterClock.getDay();
-            }
-            // Period
-            String [] Period;
-            ALARMTIME[4] = null;
-            if(isToday){
-                if("PM".equals(MasterClock.getAPM())){
-                    ALARMTIME[4] = "PM";
-                }
-            }
-            if(ALARMTIME[4] == (null)){
-                Period = new String[2];
-                Period[0] = "AM";
-                Period[1] = "PM";
-                message = "Choose a Period : ";
-                ALARMTIME[4] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Period, Period[0]);
-            }
-
-            // Hour
-            String [] Hour = getHours(isToday);
-            ALARMTIME[2] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Hour, Hour[0]);
-            if(ALARMTIME[2].length() < 2){
-                ALARMTIME[2] = "0" + ALARMTIME[2];
-            }
-            // Min
-            String [] Min = getMins(isToday);
-            ALARMTIME[3] = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Min, Min[0]);
-            if(ALARMTIME[3].length() < 2)
-            ALARMTIME[3] = "0" + ALARMTIME[3];
+            if(!CascdingWindow.ALARM)
+                CascdingWindow.ALARM = true;
         }
-
     }
     private void checkAlarm() {
+        if(!CascdingWindow.ALARM)
         if(ALARMTIME[3].equals(MasterClock.getMin()) &&  ALARMTIME[2].equals(MasterClock.getHour()) &&
                 ALARMTIME[0].equals(MasterClock.getMonth()) && ALARMTIME[1].equals(MasterClock.getDay()) &&
                 ALARMTIME[4].equals(MasterClock.getAPM())){
@@ -367,7 +310,10 @@ public class DigitalTimer extends Graphics{
                drawNumbers(art);
                break;
        }
-
+       if(errorMessage) {
+           art.setColor(Color.YELLOW);
+           art.drawString(theErrorMessage, (frame.getWidth() - art.getFontMetrics().stringWidth(theErrorMessage)) / 2, frame.getY() / 2);
+       }
        /*
        This goes through all the letters of the alphabet
        testALPHA(art);
@@ -395,7 +341,7 @@ public class DigitalTimer extends Graphics{
         }
         return "SAT";
     }
-    private String[] getHours(boolean isToday) {
+    public static String[] getHours(boolean isToday) {
         String [] hrs;
         int end = 12;
         int start = 12;
@@ -420,7 +366,7 @@ public class DigitalTimer extends Graphics{
     }
 // 0 - Month // 1 - Day // 2 - Hour // 3 - Min // 4 - Period // 5 - Year
 
-    private String[] getMins(boolean isToday) {
+    public static String[] getMins(boolean isToday) {
 
         String [] mins;
         int end = 60;
@@ -436,7 +382,7 @@ public class DigitalTimer extends Graphics{
         return mins;
 
     }
-    private String [] getYear(){
+    public static String [] getYear(){
         int YYYY = Integer.valueOf(MasterClock.getYear());
         String[] y = new String[5];
         for(int i = 0; i < 5; i++){
@@ -444,7 +390,7 @@ public class DigitalTimer extends Graphics{
         }
         return y;
     }
-    private String[] getDays(String month){
+    public static String[] getDays(String month){
         int days = 28;
         switch(month) {
             case "January":
@@ -507,7 +453,7 @@ public class DigitalTimer extends Graphics{
         }
         return "DEC";
     }
-    private String []getMonth(){
+    public static String []getMonth(){
         String [] Month = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
         int CurrentMonth = monthNum(MasterClock.getMonth());
         String [] fixed = new String[12 - CurrentMonth - 1];
@@ -516,11 +462,11 @@ public class DigitalTimer extends Graphics{
         }
         return fixed;
     }
-    private String[] getMonths(){
+    public static String[] getMonths(){
         String [] Month = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
         return Month;
     }
-    private int monthNum(String month) {
+    private static int monthNum(String month) {
         switch(month){
             case "January":
                 return 1;
@@ -563,7 +509,7 @@ public class DigitalTimer extends Graphics{
 
     }
     private void drawBackground(Graphics2D g2d){
-        g2d.setColor(Color.black);
+        g2d.setColor(bkcolor);
         g2d.fillRect(0,0,frame.getWidth(), frame.getHeight());
     }
     private void drawAlpha(Graphics2D g2d) {

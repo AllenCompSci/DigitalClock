@@ -7,56 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88118f89-11bb-45f4-a9cb-f9b702d5cf27" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/dt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/driver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Alphabet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/BetterFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Complex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/DigitalTimer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/DrawingTools.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Graphics.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/MasterClock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/RandomColorGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Resizer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Resizer$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Resizer$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Resizer$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Resizer$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Resizer$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Resizer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/generic/graphics/Timer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generic/graphics/dt.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Alert.mp3" afterPath="$PROJECT_DIR$/resource/audio/Alert.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Beep.mp3" afterPath="$PROJECT_DIR$/resource/audio/Beep.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Door-Chime.mp3" afterPath="$PROJECT_DIR$/resource/audio/Door-Chime.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/EAS.mp3" afterPath="$PROJECT_DIR$/resource/audio/EAS.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Fire-Alarm.mp3" afterPath="$PROJECT_DIR$/resource/audio/Fire-Alarm.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Fire-Pager.mp3" afterPath="$PROJECT_DIR$/resource/audio/Fire-Pager.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Horn.mp3" afterPath="$PROJECT_DIR$/resource/audio/Horn.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/House-Fire-Alarm.mp3" afterPath="$PROJECT_DIR$/resource/audio/House-Fire-Alarm.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Loud-Buzzer.mp3" afterPath="$PROJECT_DIR$/resource/audio/Loud-Buzzer.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Metronome.mp3" afterPath="$PROJECT_DIR$/resource/audio/Metronome.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Railroad.mp3" afterPath="$PROJECT_DIR$/resource/audio/Railroad.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Rooster-Crow.mp3" afterPath="$PROJECT_DIR$/resource/audio/Rooster-Crow.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Rooster.mp3" afterPath="$PROJECT_DIR$/resource/audio/Rooster.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Ship-Bell.mp3" afterPath="$PROJECT_DIR$/resource/audio/Ship-Bell.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Temple-Bell.mp3" afterPath="$PROJECT_DIR$/resource/audio/Temple-Bell.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Tornado-Siren.mp3" afterPath="$PROJECT_DIR$/resource/audio/Tornado-Siren.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/Wilhelm.mp3" afterPath="$PROJECT_DIR$/resource/audio/Wilhelm.mp3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" afterPath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/Complex.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/Complex.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer$1.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/DigitalTimer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/DigitalClock_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/DigitalClock_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DigitalClock.iml" afterPath="$PROJECT_DIR$/DigitalClock.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver.java" afterPath="$PROJECT_DIR$/src/driver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/Complex.java" afterPath="$PROJECT_DIR$/src/generic/graphics/Complex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -378,6 +335,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DigitalClock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DigitalClock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1007,7 +982,7 @@
       <workItem from="1490758903678" duration="246000" />
       <workItem from="1490788655644" duration="19415000" />
       <workItem from="1490836208360" duration="6381000" />
-      <workItem from="1490873193835" duration="39235000" />
+      <workItem from="1490873193835" duration="39271000" />
     </task>
     <task id="LOCAL-00001" summary="forgot to fix the colon's at center, shifted up by .5 units">
       <created>1490759100020</created>
@@ -1051,15 +1026,22 @@
       <option name="project" value="LOCAL" />
       <updated>1490843418336</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finalized Alarm, currently makes the clock face flash.">
+      <created>1490989836946</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1490989836946</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94801000" />
+    <option name="totallyTimeSpent" value="94837000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1073,7 +1055,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994187" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />

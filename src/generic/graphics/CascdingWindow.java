@@ -39,7 +39,7 @@ public class CascdingWindow implements Runnable{
             DigitalTimer.ALARMTIME[0] = (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Month, Month[0]);
             String [] Days = DigitalTimer.getDays(DigitalTimer.ALARMTIME[0]);
             message = "Choose a Day : ";
-            DigitalTimer.ALARMTIME[1] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Month, Days[0]);
+            DigitalTimer.ALARMTIME[1] =  (String) JOptionPane.showInputDialog(null, message, "EZ ALARM", JOptionPane.QUESTION_MESSAGE, null, Days, Days[0]);
             if(DigitalTimer.ALARMTIME[1].equals(MasterClock.getDay()) && DigitalTimer.ALARMTIME[0].equals(MasterClock.getMonth()) && DigitalTimer.ALARMTIME[5].equals(MasterClock.getYear())){
                 isToday = true;
             }

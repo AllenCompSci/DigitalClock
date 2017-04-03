@@ -37,6 +37,7 @@ public class DigitalTimer extends Graphics{
     private long stopwatchTime[];
     private long clockupdate[];
     private static int height = 55;
+    public static int width = 55;
     public static boolean errorMessage = false;
     public static String theErrorMessage = "";
     private String today;
@@ -51,6 +52,7 @@ public class DigitalTimer extends Graphics{
         testLetter = 0; // TEST VALUE UNUSED
         frame.setVisible(true);
         height = frame.getHeight();
+        width = frame.getWidth();
         init();
 
 }
@@ -300,6 +302,7 @@ public class DigitalTimer extends Graphics{
    public void draw(){
        imgBuffer = frame.createImage(frame.getWidth(), frame.getHeight());
        height = frame.getHeight();
+       width = frame.getWidth();
        startDraw();
        drawBackground(art);
        switch(window){
@@ -544,5 +547,8 @@ public class DigitalTimer extends Graphics{
     }
     public static int getHeight(){
         return height;
+    }
+    public static int getWidth(){
+        return width;
     }
 }

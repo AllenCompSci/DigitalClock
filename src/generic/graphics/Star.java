@@ -46,7 +46,7 @@ public class Star {
     public void tick(){
         X+= dx;
         Y+= dy;
-        if(X < 0 || Y < 0 || X + (int)B.getX() > DigitalTimer.getWidth() || (int)E.getY() + Y > DigitalTimer.getHeight()){
+        if(X < 0 || Y < 0 || X + (int)B.getX()*starUnit > DigitalTimer.getWidth() || (int)E.getY()*starUnit + Y > DigitalTimer.getHeight()){
             toDelete = true;
         }
     }

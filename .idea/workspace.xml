@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88118f89-11bb-45f4-a9cb-f9b702d5cf27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" afterPath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/BetterFrame.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/BetterFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/DDR.java" afterPath="$PROJECT_DIR$/src/generic/graphics/DDR.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/Star.java" afterPath="$PROJECT_DIR$/src/generic/graphics/Star.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="driver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="driver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/driver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -48,25 +44,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Star.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Star.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/Star.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+            <state relative-caret-position="501">
+              <caret line="48" column="107" selection-start-line="48" selection-start-column="107" selection-end-line="48" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#LINE#0;class#LINE#0" expanded="false" />
                 <element signature="method#set1#0;class#LINE#0" expanded="false" />
                 <element signature="method#set2#0;class#LINE#0" expanded="false" />
                 <element signature="method#set#0;class#LINE#0" expanded="false" />
-                <element signature="e#2650#2651#0" expanded="true" />
-                <element signature="e#2675#2676#0" expanded="true" />
-                <element signature="e#2699#2700#0" expanded="true" />
-                <element signature="e#2724#2725#0" expanded="true" />
-                <element signature="e#2748#2749#0" expanded="true" />
-                <element signature="e#2773#2774#0" expanded="true" />
-                <element signature="e#2797#2798#0" expanded="true" />
-                <element signature="e#2822#2823#0" expanded="true" />
+                <element signature="e#2668#2669#0" expanded="true" />
+                <element signature="e#2693#2694#0" expanded="true" />
+                <element signature="e#2717#2718#0" expanded="true" />
+                <element signature="e#2742#2743#0" expanded="true" />
+                <element signature="e#2766#2767#0" expanded="true" />
+                <element signature="e#2791#2792#0" expanded="true" />
+                <element signature="e#2815#2816#0" expanded="true" />
+                <element signature="e#2840#2841#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,7 +71,7 @@
       <file leaf-file-name="DDR.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/DDR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
+            <state relative-caret-position="637">
               <caret line="53" column="192" selection-start-line="53" selection-start-column="192" selection-end-line="53" selection-end-column="192" />
               <folding>
                 <element signature="method#DDR#0;class#DDR#0" expanded="false" />
@@ -231,8 +227,8 @@
         <option value="$PROJECT_DIR$/src/generic/graphics/Arrow.java" />
         <option value="$PROJECT_DIR$/src/generic/graphics/BetterFrame.java" />
         <option value="$PROJECT_DIR$/src/generic/graphics/DigitalTimer.java" />
-        <option value="$PROJECT_DIR$/src/generic/graphics/Star.java" />
         <option value="$PROJECT_DIR$/src/generic/graphics/DDR.java" />
+        <option value="$PROJECT_DIR$/src/generic/graphics/Star.java" />
       </list>
     </option>
   </component>
@@ -852,7 +848,7 @@
       <workItem from="1490873193835" duration="39271000" />
       <workItem from="1491103587758" duration="2817000" />
       <workItem from="1491227987625" duration="32000" />
-      <workItem from="1491228097264" duration="6891000" />
+      <workItem from="1491228097264" duration="7401000" />
     </task>
     <task id="LOCAL-00001" summary="forgot to fix the colon's at center, shifted up by .5 units">
       <created>1490759100020</created>
@@ -907,7 +903,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104577000" />
+    <option name="totallyTimeSpent" value="105087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1616" height="1216" extended-state="6" />
@@ -1378,9 +1374,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/DDR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
+        <state relative-caret-position="637">
           <caret line="53" column="192" selection-start-line="53" selection-start-column="192" selection-end-line="53" selection-end-column="192" />
           <folding>
             <element signature="method#DDR#0;class#DDR#0" expanded="false" />
@@ -1393,32 +1399,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/Star.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+        <state relative-caret-position="501">
+          <caret line="48" column="107" selection-start-line="48" selection-start-column="107" selection-end-line="48" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#LINE#0;class#LINE#0" expanded="false" />
             <element signature="method#set1#0;class#LINE#0" expanded="false" />
             <element signature="method#set2#0;class#LINE#0" expanded="false" />
             <element signature="method#set#0;class#LINE#0" expanded="false" />
-            <element signature="e#2650#2651#0" expanded="true" />
-            <element signature="e#2675#2676#0" expanded="true" />
-            <element signature="e#2699#2700#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#2748#2749#0" expanded="true" />
-            <element signature="e#2773#2774#0" expanded="true" />
-            <element signature="e#2797#2798#0" expanded="true" />
-            <element signature="e#2822#2823#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2668#2669#0" expanded="true" />
+            <element signature="e#2693#2694#0" expanded="true" />
+            <element signature="e#2717#2718#0" expanded="true" />
+            <element signature="e#2742#2743#0" expanded="true" />
+            <element signature="e#2766#2767#0" expanded="true" />
+            <element signature="e#2791#2792#0" expanded="true" />
+            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#2840#2841#0" expanded="true" />
           </folding>
         </state>
       </provider>

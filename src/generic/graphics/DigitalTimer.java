@@ -20,6 +20,7 @@ public class DigitalTimer extends Graphics{
     private int CircleY2;
     private int XAlpha[], YAlpha[];
     private double unit;
+    private DDR animate;
     public static String[] ALARMTIME;
     private Alphabet myalpha;
     static final int transColorVal = 30;
@@ -196,6 +197,7 @@ public class DigitalTimer extends Graphics{
         // 0 - Month // 1 - Day // 2 - Hour // 3 - Min // 4 - Period // 5 - Year
         ALARMTIME = new String[6];
         clockupdate = new long[3];
+        animate = new DDR();
         clockupdate[2] = 1000;
         for(int i = 1; i >= 0; i--){
             clockupdate[i] = clockupdate[i+1] * 60;
@@ -316,6 +318,9 @@ public class DigitalTimer extends Graphics{
        if(errorMessage) {
            art.setColor(Color.YELLOW);
            art.drawString(theErrorMessage, (frame.getWidth() - art.getFontMetrics().stringWidth(theErrorMessage)) / 2, frame.getY() / 2);
+       }
+       if(ALARM){
+           animate.sequence(art);
        }
        /*
        This goes through all the letters of the alphabet

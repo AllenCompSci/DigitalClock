@@ -13,8 +13,9 @@ public class Arrow{
     int YCoor[];
     final int numPoints = 7;
     Color Outline, Draw;
-    public static boolean toDelete = false;
+    private boolean toDelete;
     public Arrow(DDR.Direction point, DDR.COLUMN position){
+        toDelete = false;
         Y = 0;
         X = 0;
         dXCoors = new int [7];
@@ -23,11 +24,11 @@ public class Arrow{
         YCoor = new int [7];
         switch (position) {
             case BLUE_COL:
-                X += 8 * UNIT;
+                X += 10 * UNIT;
             case GREEN_COL:
-                X += 8 * UNIT;
+                X += 10 * UNIT;
             case YELLOW_COL:
-                X += 8 * UNIT;
+                X += 10 * UNIT;
             case RED_COL:
                 X += COLUMNSHIFT;
         }
@@ -107,10 +108,10 @@ public class Arrow{
         for(int i = 0; i < 7; i++)
         {
             XCoor[i] = X + dXCoors[i];
-            YCoor[i] = X + dYCoors[i];
+            YCoor[i] = Y + dYCoors[i];
         }
-        Draw = Color.LIGHT_GRAY;
-        Outline = Color.WHITE;
+        Draw = new Color(Color.LIGHT_GRAY.getRed(), Color.LIGHT_GRAY.getGreen(), Color.LIGHT_GRAY.getBlue(), 50);
+        Outline = new Color(255, 255, 255, 40);
     }
     public void tick(){
         Y += 4;
@@ -129,5 +130,8 @@ public class Arrow{
         g2d.fillPolygon(XCoor,YCoor,numPoints);
         g2d.setColor(Outline);
         g2d.drawPolygon(XCoor,YCoor,numPoints);
+    }
+    public boolean getState(){
+        return toDelete;
     }
 }

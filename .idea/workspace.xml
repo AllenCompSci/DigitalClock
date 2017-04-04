@@ -7,6 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88118f89-11bb-45f4-a9cb-f9b702d5cf27" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" afterPath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" />
     </list>
@@ -110,12 +112,11 @@
       <file leaf-file-name="AudioPlayer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+            <state relative-caret-position="1190">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
                 <element signature="method#playOnce#0;class#AudioPlayer#0" expanded="false" />
                 <element signature="method#spaceRemove#0;class#AudioPlayer#0" expanded="false" />
-                <element signature="method#run#0;class#AudioPlayer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -921,7 +922,7 @@
       <workItem from="1490873193835" duration="39271000" />
       <workItem from="1491103587758" duration="2817000" />
       <workItem from="1491227987625" duration="32000" />
-      <workItem from="1491228097264" duration="13928000" />
+      <workItem from="1491228097264" duration="14064000" />
     </task>
     <task id="LOCAL-00001" summary="forgot to fix the colon's at center, shifted up by .5 units">
       <created>1490759100020</created>
@@ -976,7 +977,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111614000" />
+    <option name="totallyTimeSpent" value="111750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1616" height="1216" extended-state="6" />
@@ -1490,12 +1491,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+        <state relative-caret-position="1190">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
             <element signature="method#playOnce#0;class#AudioPlayer#0" expanded="false" />
             <element signature="method#spaceRemove#0;class#AudioPlayer#0" expanded="false" />
-            <element signature="method#run#0;class#AudioPlayer#0" expanded="false" />
           </folding>
         </state>
       </provider>

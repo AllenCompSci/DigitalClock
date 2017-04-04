@@ -38,7 +38,7 @@ public class AudioPlayer implements Runnable{
     private static void init(){
         try{
            File file = new File("resources/generic/graphics/" +input);
-            //System.out.println(ResourceLoader.class.getResourceAsStream(input).toString());
+
            if(file.exists()) {
 
                FileInputStream fis = new FileInputStream(file);
@@ -46,31 +46,12 @@ public class AudioPlayer implements Runnable{
                player = new Player(bis);
            }
            else{
-               /*
-               file = new File("resource/" +input);
-               DigitalTimer.bkcolor = Color.gray;
-               Thread.sleep(900);
-               FileInputStream fis = new FileInputStream(file);
-               DigitalTimer.bkcolor = Color.orange;
-               Thread.sleep(900);
-               */
 
-               //JOptionPane.showMessageDialog(null,ResourceLoader.class.getResourceAsStream("src/resource/" + input).toString(), JOptionPane.MESSAGE_PROPERTY, 3,null);
-               //fis);
-
-               //InputStream root = driver.class.getResourceAsStream("/src/generic/graphics/" + input);
-              // DigitalTimer.bkcolor = Color.pink;
-               //Thread.sleep(2000);
-
-               //pathToMp3 = AudioPlayer.class.getClass().getResourceAsStream(input).toString();
                DigitalTimer.theErrorMessage = "BIS";
                DigitalTimer.errorMessage = true;
                BufferedInputStream bis = new BufferedInputStream(AudioPlayer.class.getClass().getResourceAsStream(input));
 
-               //FileInputStream fis = new FileInputStream(pathToMp3);
-               //DigitalTimer.bkcolor = Color.white;
-               //Thread.sleep(2000);
-               //DigitalTimer.theErrorMessage = AudioPlayer.class.getResourceAsStream("./resource/" + input).toString();
+
                if(bis!= null) {
                    DigitalTimer.theErrorMessage = bis.toString();
                    player = new Player(bis);
@@ -99,8 +80,6 @@ public class AudioPlayer implements Runnable{
     }
     public static void setInput(String fileName){
         input =  spaceRemove(fileName);
-        //System.out.println(input);
-
         init();
     }
     private static String spaceRemove(String fileName){
@@ -127,30 +106,5 @@ public class AudioPlayer implements Runnable{
             }
         }
     }
-    /*
-    public static URL getResource(String resource){
 
-        URL url ;
-
-        //Try with the Thread Context Loader.
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        if(classLoader != null){
-            url = classLoader.getResource(resource);
-            if(url != null){
-                return url;
-            }
-        }
-
-        //Let's now try with the classloader that loaded this class.
-        classLoader = Loader.class.getClassLoader();
-        if(classLoader != null){
-            url = classLoader.getResource(resource);
-            if(url != null){
-                return url;
-            }
-        }
-
-        //Last ditch attempt. Get the resource from the classpath.
-        return ClassLoader.getSystemResource(resource);
-    }*/
 }

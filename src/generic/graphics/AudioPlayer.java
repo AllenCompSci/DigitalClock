@@ -18,6 +18,7 @@ import java.util.jar.JarFile;
 public class AudioPlayer implements Runnable{
     final String path = "";
     String pathToX = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
+    static String pathToMp3 = "";
     final File jarFile = new File(pathToX);
     JarFile jarfile;
     static ArrayList<Object> fi;
@@ -36,7 +37,7 @@ public class AudioPlayer implements Runnable{
 
     private static void init(){
         try{
-           File file = new File("resource/audio/" +input);
+           File file = new File("resource/generic/graphics/" +input);
             //System.out.println(ResourceLoader.class.getResourceAsStream(input).toString());
            if(file.exists()) {
 
@@ -60,15 +61,23 @@ public class AudioPlayer implements Runnable{
                //InputStream root = driver.class.getResourceAsStream("/src/generic/graphics/" + input);
               // DigitalTimer.bkcolor = Color.pink;
                //Thread.sleep(2000);
-               BufferedInputStream bis = new BufferedInputStream(AudioPlayer.class.getResourceAsStream("./resource/" + input));
+
+               //pathToMp3 = AudioPlayer.class.getClass().getResourceAsStream(input).toString();
+               DigitalTimer.theErrorMessage = "BIS";
+               DigitalTimer.errorMessage = true;
+               BufferedInputStream bis = new BufferedInputStream(AudioPlayer.class.getClass().getResourceAsStream(input));
+
+               //FileInputStream fis = new FileInputStream(pathToMp3);
                //DigitalTimer.bkcolor = Color.white;
                //Thread.sleep(2000);
-               //DigitalTimer.errorMessage = true;
-               DigitalTimer.theErrorMessage = AudioPlayer.class.getResourceAsStream("./resource/" + input).toString();
-               if(bis!= null)
-                    player = new Player(bis);
-
-
+               //DigitalTimer.theErrorMessage = AudioPlayer.class.getResourceAsStream("./resource/" + input).toString();
+               if(bis!= null) {
+                   DigitalTimer.theErrorMessage = bis.toString();
+                   player = new Player(bis);
+               }
+                else{
+                   DigitalTimer.theErrorMessage = "bis null ";
+               }
            }
 
 

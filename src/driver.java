@@ -12,7 +12,7 @@ public class driver {
     static Class driverClass = driver.class;
     public static void main(String [] args0){
         CascdingWindow handler = new CascdingWindow();
-        AudioPlayer example = new AudioPlayer("/Wilhelm.mp3");
+        AudioPlayer example = new AudioPlayer("Wilhelm.mp3");
         DigitalTimer time = new DigitalTimer();
         new Thread(example).start();
         new Thread(new MasterClock()).start();

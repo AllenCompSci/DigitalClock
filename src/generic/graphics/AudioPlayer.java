@@ -37,7 +37,7 @@ public class AudioPlayer implements Runnable{
 
     private static void init(){
         try{
-           File file = new File("resource/generic/graphics/" +input);
+           File file = new File("resources/generic/graphics/" +input);
             //System.out.println(ResourceLoader.class.getResourceAsStream(input).toString());
            if(file.exists()) {
 

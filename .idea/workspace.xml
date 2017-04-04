@@ -7,29 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88118f89-11bb-45f4-a9cb-f9b702d5cf27" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Alert.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Alert.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Beep.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Beep.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Door-Chime.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Door-Chime.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/EAS.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/EAS.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Fire-Alarm.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Fire-Alarm.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Fire-Pager.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Fire-Pager.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Horn.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Horn.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/House-Fire-Alarm.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/House-Fire-Alarm.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Loud-Buzzer.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Loud-Buzzer.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Metronome.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Metronome.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Railroad.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Railroad.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Rooster-Crow.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Rooster-Crow.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Rooster.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Rooster.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Ship-Bell.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Ship-Bell.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Temple-Bell.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Temple-Bell.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Tornado-Siren.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Tornado-Siren.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resource/audio/Wilhelm.mp3" afterPath="$PROJECT_DIR$/resources/generic/graphics/Wilhelm.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" afterPath="$PROJECT_DIR$/out/artifacts/DigitalClock_jar/DigitalClock.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/driver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" afterPath="$PROJECT_DIR$/out/production/DigitalClock/generic/graphics/AudioPlayer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DigitalClock.iml" afterPath="$PROJECT_DIR$/DigitalClock.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver.java" afterPath="$PROJECT_DIR$/src/driver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" afterPath="$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java" />
     </list>
     <ignored path="untitled1.iws" />
@@ -132,8 +110,8 @@
       <file leaf-file-name="AudioPlayer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
+            <state relative-caret-position="297">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
               <folding>
                 <element signature="method#playOnce#0;class#AudioPlayer#0" expanded="false" />
                 <element signature="method#spaceRemove#0;class#AudioPlayer#0" expanded="false" />
@@ -943,7 +921,7 @@
       <workItem from="1490873193835" duration="39271000" />
       <workItem from="1491103587758" duration="2817000" />
       <workItem from="1491227987625" duration="32000" />
-      <workItem from="1491228097264" duration="13875000" />
+      <workItem from="1491228097264" duration="13928000" />
     </task>
     <task id="LOCAL-00001" summary="forgot to fix the colon's at center, shifted up by .5 units">
       <created>1490759100020</created>
@@ -998,11 +976,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111561000" />
+    <option name="totallyTimeSpent" value="111614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1616" height="1216" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1016,7 +994,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1512,8 +1490,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generic/graphics/AudioPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
+        <state relative-caret-position="297">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
           <folding>
             <element signature="method#playOnce#0;class#AudioPlayer#0" expanded="false" />
             <element signature="method#spaceRemove#0;class#AudioPlayer#0" expanded="false" />

@@ -19,13 +19,7 @@ import java.util.jar.JarFile;
  * Short ReadMe the library file contains a jar file that has the necessary library for .mp3 files
  */
 public class AudioPlayer implements Runnable{
-    final String path = "";
-    String pathToX = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
-    static String pathToMp3 = "";
-    final File jarFile = new File(pathToX);
-    JarFile jarfile;
-    static ArrayList<Object> fi;
-    private static Player player;
+       private static Player player;
     private static String input;
     public static boolean isRunning;
     public static boolean play = false;
@@ -50,15 +44,9 @@ public class AudioPlayer implements Runnable{
            }
            else{
 
-               Path soundPath = Files.createTempFile(input.substring(0,input.indexOf(".mp3")), ".mp3");
-               try (InputStream jarSound= AudioPlayer.class.getClass().getResourceAsStream(input)){
-                   Files.copy(jarSound, soundPath, StandardCopyOption.REPLACE_EXISTING);
-               } catch (IOException e){
-                   //handle the exception
-               }
 
-               FileInputStream fis = new FileInputStream(soundPath.toUri().toURL().getPath());
-               BufferedInputStream bis = new BufferedInputStream(fis);
+
+               BufferedInputStream bis = new BufferedInputStream(AudioPlayer.class.getResourceAsStream(input));
                player = new Player(bis);
 
            }
@@ -67,7 +55,6 @@ public class AudioPlayer implements Runnable{
         }
         catch (Exception e){
             DigitalTimer.bkcolor = Color.blue;
-            DigitalTimer.errorMessage = true;
             DigitalTimer.theErrorMessage = e.getMessage().toString();
         }
     }

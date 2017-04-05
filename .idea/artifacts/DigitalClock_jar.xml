@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/DigitalClock_jar</output-path>
     <root id="archive" name="DigitalClock.jar">
       <element id="module-output" name="DigitalClock" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/library/jlme0.1.3.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

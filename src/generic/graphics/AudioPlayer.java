@@ -7,6 +7,9 @@ http://www.javazoom.net/javalayer/sourcesme.html
  */
 import java.awt.*;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.jar.JarFile;
 
@@ -47,18 +50,17 @@ public class AudioPlayer implements Runnable{
            }
            else{
 
-               DigitalTimer.theErrorMessage = "BIS";
-               DigitalTimer.errorMessage = true;
-               BufferedInputStream bis = new BufferedInputStream(AudioPlayer.class.getClass().getResourceAsStream(input));
-
-
-               if(bis!= null) {
-                   DigitalTimer.theErrorMessage = bis.toString();
-                   player = new Player(bis);
+               Path soundPath = Files.createTempFile(input.substring(0,input.indexOf(".mp3")), ".mp3");
+               try (InputStream jarSound= AudioPlayer.class.getClass().getResourceAsStream(input)){
+                   Files.copy(jarSound, soundPath, StandardCopyOption.REPLACE_EXISTING);
+               } catch (IOException e){
+                   //handle the exception
                }
-                else{
-                   DigitalTimer.theErrorMessage = "bis null ";
-               }
+
+               FileInputStream fis = new FileInputStream(soundPath.toUri().toURL().getPath());
+               BufferedInputStream bis = new BufferedInputStream(fis);
+               player = new Player(bis);
+
            }
 
 
@@ -66,7 +68,7 @@ public class AudioPlayer implements Runnable{
         catch (Exception e){
             DigitalTimer.bkcolor = Color.blue;
             DigitalTimer.errorMessage = true;
-            DigitalTimer.theErrorMessage = e.toString();
+            DigitalTimer.theErrorMessage = e.getMessage().toString();
         }
     }
     public void playOnce(){

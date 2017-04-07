@@ -40,9 +40,7 @@ public class MasterClock implements Runnable {
         System.out.println(getTIMEZONE());
 
     }
-    private void update(){ date = new Date();
-
-    }
+    private void update(){ date = new Date();    }
     public static String getDayoftheWeek(){
         return dow.format(date);
     }

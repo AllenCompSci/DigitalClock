@@ -1030,7 +1030,7 @@
       <workItem from="1491103587758" duration="2817000" />
       <workItem from="1491227987625" duration="32000" />
       <workItem from="1491228097264" duration="22474000" />
-      <workItem from="1508201449223" duration="2201000" />
+      <workItem from="1508201449223" duration="2209000" />
     </task>
     <task id="LOCAL-00001" summary="forgot to fix the colon's at center, shifted up by .5 units">
       <created>1490759100020</created>
@@ -1088,11 +1088,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508203302096</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add Tetris pieces">
+      <created>1508204829476</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1508204829476</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122361000" />
+    <option name="totallyTimeSpent" value="122369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="23" width="1238" height="709" extended-state="0" />
